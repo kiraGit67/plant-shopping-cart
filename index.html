@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Shopping Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Shop</h1>
+    </header>
+    <div class="content-wrapper">
+        <main>
+            <h2>Artikel</h2>
+            <div class="items">
+                <article class="product card">
+                    <header class="product__header">
+                        <a href="#">&lt; Back to all plants</a>
+                        <button class="product__header-button" href="#">
+                            <span class="visually-hidden">Zur Wunschliste hinzufügen</span>
+                            <svg class="product__header-button-icon" xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                            </svg>
+                        </button>
+                    </header>
+                    <div class="product__image-wrapper">
+                        <img src="img/classic-peace-lily.png" alt="Classic Peace Lily" title="Classic Peace Lily"
+                            class="product__image">
+                    </div>
+                    <div class="product__details">
+                        <h3 class="product__title">Classic Peace Lily</h3>
+                        <p class="product__subtitle">Beliebte Zimmerpflanze</p>
+                        <div class="product__price">€ <span>18,00</span></div>
+                        <p class="product__description">Beliebte Zimmerpflanze, die das ganze Jahr über blüht, große
+                            weiße kelchförmige Blüten und Blätter</p>
+                        <div class="product__actions">
+                            <button class="product__button">In den Warenkorb</button>
+                            <button class="product__button">Wunschliste</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <aside class="shopping-cart card">
+            <h2>Warenkorb</h2>
+            <div class="input-wrapper">
+                <label for="single-price">Einzelpreis</label>
+                <input type="number" step="0.01" name="single-price" id="single-price" />
+            </div>
+            <div class="input-wrapper">
+                <label for="quantity">Anzahl</label>
+                <input type="number" step="1" name="quantity" id="quantity" />
+            </div>
+            <hr>
+            <div class="input-wrapper">
+                <label for="display-total-price">Gesamt</label>
+                <div id="display-total-price"></div>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
